@@ -1,6 +1,6 @@
 # Program Developer Name: Michael Boyer
 #
-# Date Program Developed: 04/01/2025
+# Date Program Developed: 04/08/2025
 #
 # Organization: CIS 202 - 302
 #
@@ -413,7 +413,7 @@ class CalhounFriedChicken:
         options = self.item_options_helper(frame, category["items"][key])
         options.pack(pady=10, fill=tk.X)
 
-        tk.Button(frame, text="Add to Cart", command=lambda: self.add_to_cart(category, category["items"][key], options), font=self.FONT_SIZES["md"]).pack(pady=20)
+        tk.Button(frame, text="Add to Cart", command=lambda: self.add_to_cart(category, key, options), font=self.FONT_SIZES["md"]).pack(pady=20)
 
         # Button to go back to the category screen
         tk.Button(
@@ -424,18 +424,19 @@ class CalhounFriedChicken:
         self.switch_frame(frame)
 
     def show_mix_match(self, category, key):
-        print(category["items"][key])
+        # TODO: Add mix and match flow from old version of program
         return
 
     def build_meal(self, category, key):
-        print(category["items"][key])
+        # TODO: Refine meal builder flow from old version of program
         return
 
     def view_cart(self):
+        # TODO: Add cart view from old version of program
         return
 
-    def add_to_cart(self, category, item, options):
-        print(item)
+    def add_to_cart(self, category, key, options):
+        # TODO: Add function to add something to cart from old version of program
         return
 
     ## - - - - Helper functions - - - - ##
